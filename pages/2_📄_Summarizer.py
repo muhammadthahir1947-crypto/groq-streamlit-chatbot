@@ -38,7 +38,7 @@ if uploaded_file:
                 client = Groq(api_key=api_key)
                 with st.spinner("Summarizing..."):
                     res = client.chat.completions.create(
-                        model="llama-3.3-70b-versatile",
+                        model="openai/gpt-oss-120b",
                         messages=[
                             {
                                 "role": "system",
